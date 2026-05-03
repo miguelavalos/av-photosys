@@ -1,0 +1,16 @@
+.DS_Store
+.build
+DerivedData
+.DerivedData*/
+build/
+*.log
+.infisical/*
+
+!apps/ios/
+!apps/ios/**
+
+apps/ios/Config/Local.xcconfig
+apps/ios/**/*.xcuserdata/
+apps/ios/*.xcodeproj/xcuserdata/
+apps/ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+apps/ios/.DerivedData*/

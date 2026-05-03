@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>AV Photosys</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>AV Photosys</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>AVACCOUNT_PUBLISHABLE_KEY</key>
+	<string>$(AVACCOUNT_PUBLISHABLE_KEY)</string>
+	<key>AVACCOUNT_API_BASE_URL</key>
+	<string>$(AVACCOUNT_API_BASE_URL)</string>
+	<key>AVPHOTOSYS_SUPPORT_EMAIL</key>
+	<string>$(AVPHOTOSYS_SUPPORT_EMAIL)</string>
+	<key>AVACCOUNT_MANAGEMENT_URL</key>
+	<string>$(AVACCOUNT_MANAGEMENT_URL)</string>
+	<key>AVPHOTOSYS_TERMS_URL</key>
+	<string>$(AVPHOTOSYS_TERMS_URL)</string>
+	<key>AVPHOTOSYS_PRIVACY_URL</key>
+	<string>$(AVPHOTOSYS_PRIVACY_URL)</string>
+	<key>AVPHOTOSYS_OPEN_SOURCE_URL</key>
+	<string>$(AVPHOTOSYS_OPEN_SOURCE_URL)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>AV Photosys needs access to the photo library so you can choose which photos to sync.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>AV Photosys may save exported images back to your photo library when future export flows are enabled.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+</dict>
+</plist>

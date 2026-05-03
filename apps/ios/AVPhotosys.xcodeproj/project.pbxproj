@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A3CECCDD20C44E919C3D9E /* SelfHostedConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D36C4D9B7DCBF7B1396CF /* SelfHostedConfigController.swift */; };
+		09D1A6DA67BDED739BB8E608 /* ClerkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5E25E9FA728F10204B7E39 /* ClerkKit */; };
+		12CB658C85D17CBD98A2A80D /* HostedGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2141D0F92E65C1B474BB4530 /* HostedGalleryView.swift */; };
+		1748693169CA14BE7374B2A4 /* AVPhotosysTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9C30D0E451035603B0189B /* AVPhotosysTheme.swift */; };
+		3FD282516B9CFDFBE1ECDFBC /* AVPhotosysAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1EEE98495245B17C60D30F /* AVPhotosysAPIClient.swift */; };
+		45289AFDD1EBDCB159BA62D1 /* LocalLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC661FC1010997A8FAA264A1 /* LocalLibraryController.swift */; };
+		45C892EAEDDDF9C62C3AE72F /* LibrarySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8468EB6303F613EBE6C36BD /* LibrarySelectionView.swift */; };
+		4C9A806B4BCA047E9D3A19EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704B0F670EAC727E4222C066 /* Assets.xcassets */; };
+		4CE2A3A18DA9DF305AD54675 /* AuthOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA097A8FB58E9BD5F3FDDB /* AuthOnboardingView.swift */; };
+		5245CEAA4333EB15F0F6BD0B /* AccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA43918EDD0105DDF861D43 /* AccessController.swift */; };
+		53394CFCE9D9A6EFB38698C6 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491606370BB1100B76C1F73A /* L10n.swift */; };
+		55EFA432B1FB13E7DBE2227B /* AVAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD387B331D287381650365 /* AVAccountService.swift */; };
+		589A7D6CC075BCAB4057F6DF /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAAD0722EBEC6BF2950E74 /* ProfileScreen.swift */; };
+		5B71D9D749B1CF0A50E6641D /* AVPhotosysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD29D12C73849F014C3095B /* AVPhotosysApp.swift */; };
+		60306D6E2D2C336559A4F8C8 /* HostedSyncModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0DC2B14F5A3A31F1A562DF /* HostedSyncModels.swift */; };
+		6C1005B4FD8D2BC47EB20E40 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ACD3154A4B9BDC7C187578 /* AppConfig.swift */; };
+		6F2BC754F582F2605D9A6A46 /* SharedAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4A1E4B6E364927874AD120 /* SharedAccountService.swift */; };
+		7245C2F3986214A39C9BC08F /* SyncQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014203E97514967E057AC720 /* SyncQueueController.swift */; };
+		77EE3BB39775C98D62B657A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 036C36625B26F5521099332F /* Localizable.strings */; };
+		8E0E9119AD974251CBA8468C /* PhotoPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A160AB4099863EB350ED3 /* PhotoPermissionController.swift */; };
+		A0CC73E5ADA1AABBE377922E /* SyncQueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B90863455765F3D5C89CBBF /* SyncQueueItem.swift */; };
+		A28FDEAE6CAB7142E1C1F149 /* SyncQueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268ABE78AA459B9F1966391 /* SyncQueueView.swift */; };
+		B36CEC34BD75B897CDBDF3E5 /* SelfHostedSetupSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C753600D9C2A2FB74E8522F /* SelfHostedSetupSheet.swift */; };
+		D27AFF964C8907C117F5A356 /* LocalPhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6974FCA20C286793741BF3 /* LocalPhotoAsset.swift */; };
+		D2A2BCACBAAB1E84AB147223 /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B01008D0457613444D74B77 /* PhotoLibraryService.swift */; };
+		E1194C0839916A9B075CE732 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77007BF2EF689CA45280A7D /* RootView.swift */; };
+		F911E57444FC451CC8864483 /* HostedSyncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E258BE8AEC29A2930712B8 /* HostedSyncController.swift */; };
+		F928824E8E2EB669939405F5 /* ClerkKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = BC3B090065CFE3344A869FE2 /* ClerkKitUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00B442133E6449FC80ED65FB /* AVPhotosys.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AVPhotosys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		014203E97514967E057AC720 /* SyncQueueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncQueueController.swift; sourceTree = "<group>"; };
+		0E6974FCA20C286793741BF3 /* LocalPhotoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPhotoAsset.swift; sourceTree = "<group>"; };
+		10E258BE8AEC29A2930712B8 /* HostedSyncController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedSyncController.swift; sourceTree = "<group>"; };
+		17AE550D3F6363CCECF31B06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		190D36C4D9B7DCBF7B1396CF /* SelfHostedConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfHostedConfigController.swift; sourceTree = "<group>"; };
+		2141D0F92E65C1B474BB4530 /* HostedGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedGalleryView.swift; sourceTree = "<group>"; };
+		2D4A1E4B6E364927874AD120 /* SharedAccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAccountService.swift; sourceTree = "<group>"; };
+		30FAAD0722EBEC6BF2950E74 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		32C2EE68CA290A13B4B725EA /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		3B01008D0457613444D74B77 /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
+		3B90863455765F3D5C89CBBF /* SyncQueueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncQueueItem.swift; sourceTree = "<group>"; };
+		491606370BB1100B76C1F73A /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		4C753600D9C2A2FB74E8522F /* SelfHostedSetupSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfHostedSetupSheet.swift; sourceTree = "<group>"; };
+		4C7D2B7CD70680DCC1C4568A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4EDD045BF279F313655CAA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4FA43918EDD0105DDF861D43 /* AccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessController.swift; sourceTree = "<group>"; };
+		5268ABE78AA459B9F1966391 /* SyncQueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncQueueView.swift; sourceTree = "<group>"; };
+		52DD387B331D287381650365 /* AVAccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAccountService.swift; sourceTree = "<group>"; };
+		54ACD3154A4B9BDC7C187578 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		5B6B5E346571518F22C47F30 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5C0DC2B14F5A3A31F1A562DF /* HostedSyncModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedSyncModels.swift; sourceTree = "<group>"; };
+		6B9C30D0E451035603B0189B /* AVPhotosysTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPhotosysTheme.swift; sourceTree = "<group>"; };
+		704B0F670EAC727E4222C066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73AA097A8FB58E9BD5F3FDDB /* AuthOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthOnboardingView.swift; sourceTree = "<group>"; };
+		7BDA1BC336F89CFD74B68A16 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E1EEE98495245B17C60D30F /* AVPhotosysAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPhotosysAPIClient.swift; sourceTree = "<group>"; };
+		8C2A160AB4099863EB350ED3 /* PhotoPermissionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPermissionController.swift; sourceTree = "<group>"; };
+		A77007BF2EF689CA45280A7D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		BFF898DCFE4A236607F47746 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC661FC1010997A8FAA264A1 /* LocalLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLibraryController.swift; sourceTree = "<group>"; };
+		CCD29D12C73849F014C3095B /* AVPhotosysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPhotosysApp.swift; sourceTree = "<group>"; };
+		F10A9B9EEF32C2AB087745BF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		F8468EB6303F613EBE6C36BD /* LibrarySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySelectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E348C70954E6453BE3815E08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D1A6DA67BDED739BB8E608 /* ClerkKit in Frameworks */,
+				F928824E8E2EB669939405F5 /* ClerkKitUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C5B2FE7496EBDFB6AE3B3BE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4FA43918EDD0105DDF861D43 /* AccessController.swift */,
+				54ACD3154A4B9BDC7C187578 /* AppConfig.swift */,
+				704B0F670EAC727E4222C066 /* Assets.xcassets */,
+				52DD387B331D287381650365 /* AVAccountService.swift */,
+				CCD29D12C73849F014C3095B /* AVPhotosysApp.swift */,
+				10E258BE8AEC29A2930712B8 /* HostedSyncController.swift */,
+				4EDD045BF279F313655CAA3D /* Info.plist */,
+				491606370BB1100B76C1F73A /* L10n.swift */,
+				CC661FC1010997A8FAA264A1 /* LocalLibraryController.swift */,
+				8C2A160AB4099863EB350ED3 /* PhotoPermissionController.swift */,
+				A77007BF2EF689CA45280A7D /* RootView.swift */,
+				190D36C4D9B7DCBF7B1396CF /* SelfHostedConfigController.swift */,
+				2D4A1E4B6E364927874AD120 /* SharedAccountService.swift */,
+				014203E97514967E057AC720 /* SyncQueueController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1129B794C260A3F8CBE50BFD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				32C2EE68CA290A13B4B725EA /* Debug.xcconfig */,
+				F10A9B9EEF32C2AB087745BF /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		15167555F9C268A4E60F0814 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F8468EB6303F613EBE6C36BD /* LibrarySelectionView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1563DDD3A06537115916230F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00B442133E6449FC80ED65FB /* AVPhotosys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34810CF62342F982E58EB129 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				036C36625B26F5521099332F /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3994F80C9F149F83EB5E15C4 /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				2141D0F92E65C1B474BB4530 /* HostedGalleryView.swift */,
+				5268ABE78AA459B9F1966391 /* SyncQueueView.swift */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		5AFB3EC33F0152D3C97C94C9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6B9C30D0E451035603B0189B /* AVPhotosysTheme.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5C0BB3787EF6EC554920FE3C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				30FAAD0722EBEC6BF2950E74 /* ProfileScreen.swift */,
+				4C753600D9C2A2FB74E8522F /* SelfHostedSetupSheet.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6615832A9B1B745F9DF42948 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E226172902FDBB04929FE4E3 /* Auth */,
+				15167555F9C268A4E60F0814 /* Library */,
+				5C0BB3787EF6EC554920FE3C /* Profile */,
+				3994F80C9F149F83EB5E15C4 /* Sync */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		95FE423396DEA3FC49FC0C07 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7E1EEE98495245B17C60D30F /* AVPhotosysAPIClient.swift */,
+				3B01008D0457613444D74B77 /* PhotoLibraryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98E930A6B9076C416A330CE9 /* AVPhotosys */ = {
+			isa = PBXGroup;
+			children = (
+				0C5B2FE7496EBDFB6AE3B3BE /* App */,
+				6615832A9B1B745F9DF42948 /* Features */,
+				AD01B2575143A96EE799D350 /* Models */,
+				34810CF62342F982E58EB129 /* Resources */,
+				95FE423396DEA3FC49FC0C07 /* Services */,
+				5AFB3EC33F0152D3C97C94C9 /* UI */,
+			);
+			path = AVPhotosys;
+			sourceTree = "<group>";
+		};
+		AD01B2575143A96EE799D350 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C0DC2B14F5A3A31F1A562DF /* HostedSyncModels.swift */,
+				0E6974FCA20C286793741BF3 /* LocalPhotoAsset.swift */,
+				3B90863455765F3D5C89CBBF /* SyncQueueItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7A75EF179E29DBC89576D1A = {
+			isa = PBXGroup;
+			children = (
+				98E930A6B9076C416A330CE9 /* AVPhotosys */,
+				1129B794C260A3F8CBE50BFD /* Config */,
+				1563DDD3A06537115916230F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E226172902FDBB04929FE4E3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				73AA097A8FB58E9BD5F3FDDB /* AuthOnboardingView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2235C2B7677B99D61DD9D69 /* AVPhotosys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D206DE5FDFFFF8CADD14C80E /* Build configuration list for PBXNativeTarget "AVPhotosys" */;
+			buildPhases = (
+				B11B4D5EEF6B95F5C4007021 /* Sources */,
+				C46E832A9357D7F0AB185A66 /* Resources */,
+				E348C70954E6453BE3815E08 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVPhotosys;
+			packageProductDependencies = (
+				0C5E25E9FA728F10204B7E39 /* ClerkKit */,
+				BC3B090065CFE3344A869FE2 /* ClerkKitUI */,
+			);
+			productName = AVPhotosys;
+			productReference = 00B442133E6449FC80ED65FB /* AVPhotosys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F333961058C43705DF40D320 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C2235C2B7677B99D61DD9D69 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = EC8651D1238A78EAD3647197 /* Build configuration list for PBXProject "AVPhotosys" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ca,
+				de,
+				en,
+				es,
+				fr,
+			);
+			mainGroup = C7A75EF179E29DBC89576D1A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3ED52B2119FE9CBD6385ECD7 /* XCRemoteSwiftPackageReference "clerk-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1563DDD3A06537115916230F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2235C2B7677B99D61DD9D69 /* AVPhotosys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C46E832A9357D7F0AB185A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9A806B4BCA047E9D3A19EF /* Assets.xcassets in Resources */,
+				77EE3BB39775C98D62B657A2 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B11B4D5EEF6B95F5C4007021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55EFA432B1FB13E7DBE2227B /* AVAccountService.swift in Sources */,
+				3FD282516B9CFDFBE1ECDFBC /* AVPhotosysAPIClient.swift in Sources */,
+				5B71D9D749B1CF0A50E6641D /* AVPhotosysApp.swift in Sources */,
+				1748693169CA14BE7374B2A4 /* AVPhotosysTheme.swift in Sources */,
+				5245CEAA4333EB15F0F6BD0B /* AccessController.swift in Sources */,
+				6C1005B4FD8D2BC47EB20E40 /* AppConfig.swift in Sources */,
+				4CE2A3A18DA9DF305AD54675 /* AuthOnboardingView.swift in Sources */,
+				12CB658C85D17CBD98A2A80D /* HostedGalleryView.swift in Sources */,
+				F911E57444FC451CC8864483 /* HostedSyncController.swift in Sources */,
+				60306D6E2D2C336559A4F8C8 /* HostedSyncModels.swift in Sources */,
+				53394CFCE9D9A6EFB38698C6 /* L10n.swift in Sources */,
+				45C892EAEDDDF9C62C3AE72F /* LibrarySelectionView.swift in Sources */,
+				45289AFDD1EBDCB159BA62D1 /* LocalLibraryController.swift in Sources */,
+				D27AFF964C8907C117F5A356 /* LocalPhotoAsset.swift in Sources */,
+				D2A2BCACBAAB1E84AB147223 /* PhotoLibraryService.swift in Sources */,
+				8E0E9119AD974251CBA8468C /* PhotoPermissionController.swift in Sources */,
+				589A7D6CC075BCAB4057F6DF /* ProfileScreen.swift in Sources */,
+				E1194C0839916A9B075CE732 /* RootView.swift in Sources */,
+				05A3CECCDD20C44E919C3D9E /* SelfHostedConfigController.swift in Sources */,
+				B36CEC34BD75B897CDBDF3E5 /* SelfHostedSetupSheet.swift in Sources */,
+				6F2BC754F582F2605D9A6A46 /* SharedAccountService.swift in Sources */,
+				7245C2F3986214A39C9BC08F /* SyncQueueController.swift in Sources */,
+				A0CC73E5ADA1AABBE377922E /* SyncQueueItem.swift in Sources */,
+				A28FDEAE6CAB7142E1C1F149 /* SyncQueueView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		036C36625B26F5521099332F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF898DCFE4A236607F47746 /* ca */,
+				4C7D2B7CD70680DCC1C4568A /* de */,
+				17AE550D3F6363CCECF31B06 /* en */,
+				5B6B5E346571518F22C47F30 /* es */,
+				7BDA1BC336F89CFD74B68A16 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D2616C07A600047798FFA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C2EE68CA290A13B4B725EA /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "$(AVALSYS_APPLE_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AVPhotosys/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3444694D887B43C2E450EC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_LANGUAGE = en;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "AV Photosys";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D01EE2E700B195753080898D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_LANGUAGE = en;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "AV Photosys";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		DBA667464CC2E8F571789481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10A9B9EEF32C2AB087745BF /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "$(AVALSYS_APPLE_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AVPhotosys/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D206DE5FDFFFF8CADD14C80E /* Build configuration list for PBXNativeTarget "AVPhotosys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D2616C07A600047798FFA4E /* Debug */,
+				DBA667464CC2E8F571789481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC8651D1238A78EAD3647197 /* Build configuration list for PBXProject "AVPhotosys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01EE2E700B195753080898D /* Debug */,
+				3444694D887B43C2E450EC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3ED52B2119FE9CBD6385ECD7 /* XCRemoteSwiftPackageReference "clerk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/clerk/clerk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C5E25E9FA728F10204B7E39 /* ClerkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ED52B2119FE9CBD6385ECD7 /* XCRemoteSwiftPackageReference "clerk-ios" */;
+			productName = ClerkKit;
+		};
+		BC3B090065CFE3344A869FE2 /* ClerkKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ED52B2119FE9CBD6385ECD7 /* XCRemoteSwiftPackageReference "clerk-ios" */;
+			productName = ClerkKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F333961058C43705DF40D320 /* Project object */;
+}

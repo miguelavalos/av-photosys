@@ -1,0 +1,12 @@
+AVPHOTOSYS_BUNDLE_IDENTIFIER = com.avalsys.avphotosys.dev
+AVALSYS_APPLE_DEVELOPMENT_TEAM = $(inherited)
+AVACCOUNT_PUBLISHABLE_KEY = $(inherited)
+AVACCOUNT_API_BASE_URL = $(inherited)
+AVACCOUNT_MANAGEMENT_URL = $(inherited)
+AVPHOTOSYS_SUPPORT_EMAIL = $(inherited)
+AVPHOTOSYS_TERMS_URL = $(inherited)
+AVPHOTOSYS_PRIVACY_URL = $(inherited)
+AVPHOTOSYS_OPEN_SOURCE_URL = https:/$()/github.com/miguelavalos/av-photosys
+AVPHOTOSYS_PREMIUM_PRODUCT_IDS = $(inherited)
+PRODUCT_BUNDLE_IDENTIFIER = $(AVPHOTOSYS_BUNDLE_IDENTIFIER)
+#include? "Local.xcconfig"
