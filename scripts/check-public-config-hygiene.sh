@@ -18,6 +18,29 @@ tracked_files() {
   fi
 }
 
+check_forbidden_local_artifact() {
+  local forbidden_path="$1"
+
+  if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    if git ls-files --error-unmatch "$forbidden_path" >/dev/null 2>&1; then
+      printf 'Forbidden tracked local config artifact: %s\n' "$forbidden_path" >&2
+      exit 1
+    fi
+
+    if [ -e "$forbidden_path" ] && ! git check-ignore -q "$forbidden_path"; then
+      printf 'Forbidden unignored local config artifact: %s\n' "$forbidden_path" >&2
+      exit 1
+    fi
+
+    return
+  fi
+
+  if [ -e "$forbidden_path" ]; then
+    printf 'Forbidden local config artifact in public repo workspace: %s\n' "$forbidden_path" >&2
+    exit 1
+  fi
+}
+
 for forbidden_path in \
   ".infisical/bootstrap.env.example" \
   ".infisical/bootstrap.env" \
@@ -27,10 +50,7 @@ for forbidden_path in \
   "apps/ios/Config/Local.xcconfig" \
   "apps/ios/Config/Local.xcconfig.example"
 do
-  if [ -e "$forbidden_path" ]; then
-    printf 'Forbidden local config artifact in public repo workspace: %s\n' "$forbidden_path" >&2
-    exit 1
-  fi
+  check_forbidden_local_artifact "$forbidden_path"
 done
 
 content_pattern='pk_(live|test)_[A-Za-z0-9_]+|sk_(live|test)_[A-Za-z0-9_]+|real_publishable_key|CLERK_SECRET_KEY=|AVACCOUNT_SUBSCRIPTION_SYNC_TOKEN=|https://api\.av-account\.avalsys\.com|avaccount_api_base_url=.*127\.0\.0\.1:8788|AVALSYS_APPLE_DEVELOPMENT_TEAM[[:space:]]*=[[:space:]]*[A-Z0-9]{10}|DEVELOPMENT_TEAM[[:space:]]*=[[:space:]]*[A-Z0-9]{10}'
