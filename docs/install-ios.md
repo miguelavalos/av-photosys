@@ -41,7 +41,7 @@ The current app foundation includes:
 - photo-library permission flow
 - library, sync, and profile tabs
 - local client config pattern
-- av-radio-aligned onboarding, continue-or-skip, language, and theme flows
+- AV Tunesys-aligned onboarding, continue-or-skip, language, and theme flows
 - real AV Account sign-in through the configured account provider
 - hosted backend reachability check
 - authenticated remote asset listing using the signed-in account session or an explicit self-hosted backend token

@@ -32,7 +32,7 @@
 "auth.selfHosted.validation.baseURL" = "Enter a valid http or https base URL.";
 "auth.option.apple" = "Continue with Apple";
 "auth.option.google" = "Continue with Google";
-"auth.options.detail" = "Use the same onboarding and account entry flow as av-radio, then keep the photo-specific experience separate.";
+"auth.options.detail" = "Use the same onboarding and account entry flow as AV Tunesys, then keep the photo-specific experience separate.";
 "auth.options.skip" = "Continue or skip";
 "auth.options.title" = "Connect your account";
 "auth.selfHosted.continue" = "Continue to staging mode";

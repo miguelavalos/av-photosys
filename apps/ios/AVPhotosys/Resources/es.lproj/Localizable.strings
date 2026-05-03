@@ -32,7 +32,7 @@
 "auth.selfHosted.validation.baseURL" = "Introduce una base URL válida con http o https.";
 "auth.option.apple" = "Continuar con Apple";
 "auth.option.google" = "Continuar con Google";
-"auth.options.detail" = "Usa el mismo onboarding y entrada de cuenta que av-radio, y conecta esta app a sync de fotos hosted o self-hosted.";
+"auth.options.detail" = "Usa el mismo onboarding y entrada de cuenta que AV Tunesys, y conecta esta app a sync de fotos hosted o self-hosted.";
 "auth.options.skip" = "Continuar o saltar";
 "auth.options.title" = "Conecta tu cuenta";
 "auth.selfHosted.continue" = "Continuar a modo preparación";
