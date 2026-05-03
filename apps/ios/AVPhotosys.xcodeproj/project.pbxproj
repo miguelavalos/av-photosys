@@ -38,7 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00B442133E6449FC80ED65FB /* AVPhotosys.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AVPhotosys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B442133E6449FC80ED65FB /* AV Photosys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AV Photosys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		014203E97514967E057AC720 /* SyncQueueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncQueueController.swift; sourceTree = "<group>"; };
 		0E6974FCA20C286793741BF3 /* LocalPhotoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPhotoAsset.swift; sourceTree = "<group>"; };
 		10E258BE8AEC29A2930712B8 /* HostedSyncController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedSyncController.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		1563DDD3A06537115916230F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00B442133E6449FC80ED65FB /* AVPhotosys.app */,
+				00B442133E6449FC80ED65FB /* AV Photosys.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 				BC3B090065CFE3344A869FE2 /* ClerkKitUI */,
 			);
 			productName = AVPhotosys;
-			productReference = 00B442133E6449FC80ED65FB /* AVPhotosys.app */;
+			productReference = 00B442133E6449FC80ED65FB /* AV Photosys.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -259,11 +259,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
-				TargetAttributes = {
-					C2235C2B7677B99D61DD9D69 = {
-						DevelopmentTeam = "";
-					};
-				};
 			};
 			buildConfigurationList = EC8651D1238A78EAD3647197 /* Build configuration list for PBXProject "AVPhotosys" */;
 			developmentRegion = en;
@@ -358,7 +353,9 @@
 			baseConfigurationReference = 32C2EE68CA290A13B4B725EA /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AVPhotosys/App/AVPhotosys.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "$(AVALSYS_APPLE_DEVELOPMENT_TEAM)";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = AVPhotosys/App/Info.plist;
@@ -499,7 +496,9 @@
 			baseConfigurationReference = F10A9B9EEF32C2AB087745BF /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AVPhotosys/App/AVPhotosys.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "$(AVALSYS_APPLE_DEVELOPMENT_TEAM)";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = AVPhotosys/App/Info.plist;

@@ -50,6 +50,8 @@ targets:
     settings:
       base:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: AVPhotosys/App/AVPhotosys.entitlements
+        CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: "$(AVALSYS_APPLE_DEVELOPMENT_TEAM)"
         INFOPLIST_FILE: AVPhotosys/App/Info.plist
         GENERATE_INFOPLIST_FILE: NO
