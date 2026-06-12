@@ -16,6 +16,9 @@ case "$profile" in
   local)
     prefix="LOCAL"
     ;;
+  preview)
+    prefix="PREVIEW"
+    ;;
   production)
     prefix="PRODUCTION"
     ;;
@@ -83,4 +86,5 @@ fi
 
 echo "Unable to resolve Infisical bootstrap env for profile '$profile'." >&2
 echo "Expected ambient INFISICAL_* vars or $bootstrap_file." >&2
+echo "For this profile, the bootstrap file must provide ${prefix}_INFISICAL_PROJECT_ID, ${prefix}_INFISICAL_ENVIRONMENT, ${prefix}_INFISICAL_CLIENT_ID, and ${prefix}_INFISICAL_CLIENT_SECRET." >&2
 exit 1
