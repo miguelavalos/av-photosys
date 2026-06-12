@@ -24,7 +24,7 @@ End-to-end real sync validation with a Pro account is still follow-up work.
 
 1. Install repo tooling from the repo root:
    `bun install`
-2. Create `.infisical/bootstrap.env` locally
+2. Use the shared Avalsys bootstrap at `../../../../.infisical/bootstrap.env`
 3. Generate `Config/Local.xcconfig` from the repo root:
    `bun run ios:config`
 4. Generate the Xcode project:

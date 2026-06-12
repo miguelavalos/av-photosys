@@ -7,14 +7,14 @@ This guide covers the current local iOS app foundation for `AV Photosys`.
 1. Xcode 16 or later
 2. `xcodegen` installed locally
 3. `bun` 1.3.13 or later
-4. A local `.infisical/bootstrap.env`
+4. The shared Avalsys bootstrap at `../../../.infisical/bootstrap.env`
 5. A local `Config/Local.xcconfig` generated through Varlock, including `AVACCOUNT_PUBLISHABLE_KEY`
 
 ## Setup
 
 1. From the repo root, install dependencies:
    `bun install`
-2. Create your local bootstrap file at `.infisical/bootstrap.env`.
+2. Use the shared Avalsys bootstrap at `../../../.infisical/bootstrap.env`.
 3. Generate the local config:
    `bun run ios:config`
 4. Open `public/av-photosys/apps/ios`

@@ -38,7 +38,7 @@ docs/
 
 1. Install repo tooling:
    `bun install`
-2. Create the local Infisical bootstrap at `.infisical/bootstrap.env`.
+2. Use the shared Avalsys Infisical bootstrap at `../../../.infisical/bootstrap.env`.
 3. Resolve the local iOS config through Varlock + Infisical:
    `bun run ios:config`
 4. Go to `apps/ios`
@@ -50,7 +50,7 @@ docs/
 
 This repo now follows the standard avalsys bootstrap pattern:
 
-- `.infisical/bootstrap.env` stays local-only and feeds `scripts/resolve-infisical-bootstrap-env.sh`
+- `../../../.infisical/bootstrap.env` stays local-only at the Avalsys workspace root and feeds `scripts/resolve-infisical-bootstrap-env.sh`
 - `.env.schema` is the canonical client-config contract
 - `apps/ios/Config/Local.xcconfig` is generated locally through `varlock printenv`
 - no real tokens or hosted endpoints should be committed
